@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.org/ej2015/whitelisted-record.svg?branch=master)](https://travis-ci.org/ej2015/whitelisted-record)
 [![CodeFactor](https://www.codefactor.io/repository/github/ej2015/whitelisted-record/badge)](https://www.codefactor.io/repository/github/ej2015/whitelisted-record)
 [![Maintainability](https://api.codeclimate.com/v1/badges/bba5f2507a29312c2680/maintainability)](https://codeclimate.com/github/ej2015/whitelisted-record/maintainability)
+
 This gem adds a little decorator for your objects that allow whitelist of methods. Possible user cases include when you need to dynamically display whitelisted attributes in your view based on some criteria.
 
 ## Usage
