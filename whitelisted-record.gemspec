@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'whitelisted/record/version'
+require 'whitelisted_record/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "whitelisted-record"
-  spec.version       = Whitelisted::Record::VERSION
+  spec.version       = WhitelistedRecord::VERSION
   spec.authors       = ["Edgar"]
   spec.email         = ["zorro.ej@gmail.com"]
 
@@ -24,4 +24,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.13"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "activesupport", "~> 5.0"
 end
