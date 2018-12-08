@@ -5,7 +5,7 @@ require 'whitelisted_record/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "whitelisted-record"
-  spec.version       = WhitelistedRecord::VERSION
+  spec.version       = WhitelistedRecord::Version::VERSION
   spec.authors       = ["Edgar"]
   spec.email         = ["zorro.ej@gmail.com"]
 

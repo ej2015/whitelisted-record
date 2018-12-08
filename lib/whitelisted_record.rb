@@ -1,22 +1,15 @@
 require "whitelisted_record/version"
+require "whitelisted_record/decorator"
+require "whitelisted_record/configuration"
 
-class WhitelistedRecord
-  attr_reader :record
+module WhitelistedRecord
 
-  def initialize(record, whitelist)
-    @record = record
-    @whitelist = whitelist
+  def self.new
+    Decorator.new
   end
 
-  def respond_to?(method_name, *args, &block)
-    @record.respond_to?(method_name, *args, &block)
+  def self.configure(&block)
+    Decorator.configure(&block)
   end
 
-  def method_missing(method, *args, &block)
-    if @whitelist.nil? || @whitelist.include?(method)
-      @record.send(method, *args, &block)
-    else
-      nil
-    end
-  end
 end
