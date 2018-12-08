@@ -5,21 +5,6 @@
 
 This gem adds a little decorator for your objects that allow whitelist of methods. Possible user cases include when you need to dynamically display whitelisted attributes in your view based on some criteria.
 
-## Usage
-Simply create a decorator like this to whitelist what you want visible:
-```
-user = WhitelistedRecord(user, [:first_name, :last_name, :age])
-```
-
-## Configuration
-You can set default whitelist with a configuration. For example, in a Rails app you can put this in an initializer:
-```
-WhitelistedRecord.configure do |config|
-  config.whitelist = [:first_name, :last_name]
-end
-```
-
-
 ## Installation
 
 Add this line to your application's Gemfile:
