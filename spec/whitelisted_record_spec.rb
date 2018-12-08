@@ -2,7 +2,7 @@ require "spec_helper"
 
 describe WhitelistedRecord::Decorator do
  
-  let(:apple) { AppleDummy.new(color: 'red', taste: 'sweet', size: 'large', brand: 'BadApple') } 
+  let(:apple) { AppleDummy.new(color: 'red', taste: 'sweet', size: 'large', brand: 'BadApple') }
   let(:whitelist) { [:color, :expired?, :eat] }
   let(:whitelisted_apple) { described_class.new(apple, whitelist) }
 
@@ -42,8 +42,5 @@ describe WhitelistedRecord::Decorator do
       whitelisted_apple = described_class.new(apple)
       expect(whitelisted_apple.size).to eq 'large'
     end
- 
   end
-
-  
 end

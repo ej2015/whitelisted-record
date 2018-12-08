@@ -15,7 +15,7 @@ class AppleDummy
       true
     end
 
-    def eat 
+    def eat
       yield
     end
   end

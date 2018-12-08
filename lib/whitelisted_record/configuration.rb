@@ -1,5 +1,5 @@
 module WhitelistedRecord
-  class Configuration 
+  class Configuration
     attr_accessor :whitelist
 
     def initialize

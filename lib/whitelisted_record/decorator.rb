@@ -1,7 +1,7 @@
 module WhitelistedRecord
   class Decorator
     class << self
-      attr_accessor :configuration
+      attr_reader :configuration
     end
 
     attr_reader :record
